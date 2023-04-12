@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com_ibm_industrypack_industryclient_control_ComIbmEventInput.msgnode="com/ibm/industrypack/industryclient/control/ComIbmEventInput.msgnode" xmlns:com_ibm_industrypack_industryclient_control_ComIbmOutput.msgnode="com/ibm/industrypack/industryclient/control/ComIbmOutput.msgnode" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:eflow="http://www.ibm.com/wbi/2005/eflow" xmlns:utility="http://www.ibm.com/wbi/2005/eflow_utility" nsURI="Flow_OPCUA_Control.msgflow" nsPrefix="Flow_OPCUA_Control.msgflow">
+  <eClassifiers xmi:type="eflow:FCMComposite" name="FCMComposite_1" nodeLayoutStyle="RECTANGLE">
+    <eSuperTypes href="http://www.ibm.com/wbi/2005/eflow#//FCMBlock"/>
+    <translation xmi:type="utility:TranslatableString" key="Flow_OPCUA_Control" bundleName="Flow_OPCUA_Control" pluginId="App_OPCUA_Control"/>
+    <colorGraphic16 xmi:type="utility:GIFFileGraphic" resourceName="platform:/plugin/App_OPCUA_Control/icons/full/obj16/Flow_OPCUA_Control.gif"/>
+    <colorGraphic32 xmi:type="utility:GIFFileGraphic" resourceName="platform:/plugin/App_OPCUA_Control/icons/full/obj30/Flow_OPCUA_Control.gif"/>
+    <composition>
+      <nodes xmi:type="com_ibm_industrypack_industryclient_control_ComIbmOutput.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_1" location="472,190" connectorName="ACMfg" restrictedTo="manufacturing" nodeType="IndustryClientControlReceive">
+        <translation xmi:type="utility:ConstantString" string="Control-Receive"/>
+      </nodes>
+      <nodes xmi:type="com_ibm_industrypack_industryclient_control_ComIbmEventInput.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_2" location="131,191" connectorKeepAlive="1000" connectorName="ACMfg" restrictedTo="manufacturing" nodeType="IndustryClientControlSend">
+        <translation xmi:type="utility:ConstantString" string="Control-Send"/>
+      </nodes>
+      <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_1" targetNode="FCMComposite_1_1" sourceNode="FCMComposite_1_2" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+    </composition>
+    <propertyOrganizer/>
+    <stickyBoard/>
+  </eClassifiers>
+</ecore:EPackage>
