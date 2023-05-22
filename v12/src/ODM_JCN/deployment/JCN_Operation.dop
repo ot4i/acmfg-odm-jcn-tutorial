@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" xmlns:ilog.rules.studio.model.query.extractor="http://ilog.rules.studio/model/query/extractor.ecore" rulesetName="JCN_Operation" targetRuleProjectName="ODM_JCN">
+  <name>JCN_Operation</name>
+  <uuid>24bb8082-86c3-4d06-a168-6d4381e310d8</uuid>
+  <referencedVariables variableName="ACObject" variableSetName="VariableSetJCN" direction="IN_OUT">
+    <variableSet href="../rules/VariableSetJCN.var#571ae021-7c00-4435-a9c2-5dceaa618073"/>
+  </referencedVariables>
+  <extractor xsi:type="ilog.rules.studio.model.query.extractor:QueryExtractor" name="JCN_Operation_extractor" validator="Default Validator"/>
+  <targetRuleProject href="../../ODM_JCN#117f0142-0d79-4d24-907c-2ff2f9df6644"/>
+</com.ibm.rules.studio.model.decisionservice:Operation>

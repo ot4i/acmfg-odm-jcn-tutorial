@@ -1,0 +1,11 @@
+# Vocabulary Properties
+uuid = d9a7f0a7-2468-44c1-a9b1-f4939b407ef5
+
+# acmfgODMExample.SimpleACObject
+acmfgODMExample.SimpleACObject#concept.label = simple ACObject
+acmfgODMExample.SimpleACObject.humidity#phrase.action = set the humidity of {this} to {humidity}
+acmfgODMExample.SimpleACObject.humidity#phrase.navigation = {humidity} of {this}
+acmfgODMExample.SimpleACObject.status#phrase.action = set the status of {this} to {status}
+acmfgODMExample.SimpleACObject.status#phrase.navigation = {status} of {this}
+acmfgODMExample.SimpleACObject.temperature#phrase.action = set the temperature of {this} to {temperature}
+acmfgODMExample.SimpleACObject.temperature#phrase.navigation = {temperature} of {this}

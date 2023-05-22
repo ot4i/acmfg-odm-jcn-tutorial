@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.base:VariableSet xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.base="http://ilog.rules.studio/model/base.ecore">
+  <name>VariableSetJCN</name>
+  <uuid>571ae021-7c00-4435-a9c2-5dceaa618073</uuid>
+  <variables name="ACObject" type="acmfgODMExample.SimpleACObject" initialValue="" verbalization="ACObject"/>
+</ilog.rules.studio.model.base:VariableSet>

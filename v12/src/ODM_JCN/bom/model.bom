@@ -1,0 +1,15 @@
+
+property loadGetterSetterAsProperties "true"
+property origin "xom:/ODM_JCN//SimpleAirConditioner"
+property uuid "61e77902-395b-416c-99cb-cb9784b7e614"
+package acmfgODMExample;
+
+
+public class SimpleACObject
+{
+    public float humidity;
+    public string status;
+    public float temperature;
+    public SimpleACObject();
+}
+
