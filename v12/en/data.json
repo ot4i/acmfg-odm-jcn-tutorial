@@ -215,10 +215,19 @@
 										"details": "For further information on Rules, please refer to https://www.ibm.com/docs/en/odm/8.11.1?topic=8111-decision-server-rules"
 									},
 									{
-										"details": "In the sample example, we create XOM using the Java definition in 'SimpleACObject.java' which is located under the App_OPCUA_ODM_JCN --> App_OPCUA_ODM_JCNJava, under the Application Development. "
+										"details": "In the sample example, we create XOM using the Java definition in 'SimpleACObject.java' which is located under the Independent Resources --> SimpleAirConditioner/src, under the Application Development. "
+									},
+									{
+										"details": "Sample Rule project for reference is located under the <b>Independent Resources</b> as ODM_JCN and SimpleAirConditioner, under the Application Development. You can export both these projects as an archive file and import in the Rules Designer using the import option for Existing project into workspace. After import, you can refer to the example Decision Table, Deployment Configuration, DecisionOperation and VariableSet."
+									},
+									{
+										"details": "Please note that these examples are provided for learning purpose only. The actual Java definition and rules will depend on your specific OPC Server and configurations."
 									},
 									{
 										"details": "In this example, we have specified the 'temperature' and 'humidity' as input values and the outcome of the Decision Rule is expected in the 'status' parameter."
+									},
+									{
+										"details": "Following steps describe how to create the Rules from the sample SimpleACObject.java."
 									},
 									{
 										"details": "Export the above Java class as a Jar file."
@@ -436,7 +445,7 @@
 										"details": "Double-click the Java Compute node 'Java Compute1'.The next steps describe how you can add a new Java Compute node and select the required ruleset. " 
 									},	
 									{
-										"details": "&nbsp;&nbsp;&nbsp;<b>a) </b> Double-click the new Java Compute node 'Java Compute1'. The <b> Java Compute node class </b> window loads.<br>&nbsp;&nbsp;&nbsp;<b>b) </b>Select the package as 'default' from the Browse button. Select the other values as default  and click 'Next'.<br>&nbsp;&nbsp;&nbsp<b>c) </b>From the <b>JavaCompute node class template</b> window, select <b>'Process via Operational Decision Manager ruleset'</b>.<br>&nbsp;&nbsp;&nbsp<b>d) </b>Specify the required parameters to connect to the ODM Server and click 'Next'.'.<br>&nbsp;&nbsp;&nbsp<b>e) </b>If the connection is successful, the window <b>'Select a ruleset for the Java ODM Template' </b> loads.<br>&nbsp;&nbsp;&nbsp<b>f) </b>Select the appropriate Rules application, Rule application version, Ruleset, Ruleset version.<br>&nbsp;&nbsp;&nbsp<b>g)</b>The appropriate ruleset parameters are then loaded.<br>&nbsp;&nbsp;&nbsp;<b>h) </b>Please make sure to select or check the option for <b>'Download the jar files assosicated with this ruleset jars and add them to the Java project'.</b>.<br>&nbsp;&nbsp;&nbsp<b>i) </b>Click 'Next' and select the default values in the <b> Java Settings window</b>.<br>&nbsp;&nbsp;&nbsp<b>j) </b>Click 'Next' and click on 'Finish' to complete the set up of the Java Compute node.<br>&nbsp;&nbsp;&nbsp<b>k) </b>The above steps will auto-generate the code for the above Java Compute node and it will also download the Java XOM API jar under the App_OPCUA_ODM_JCN --> Other Resources folder.<br>&nbsp;&nbsp;&nbsp<b>m) </b>For details on connecting to the ODM Server using Java Compute node, please refer to the Knowledge Center Link: https://www.ibm.com/docs/en/app-connect/12.0?topic=uodmobr-executing-odm-business-rules-by-using-javacompute-node" 
+										"details": "&nbsp;&nbsp;&nbsp;<b>a) </b> Double-click the new Java Compute node 'Java Compute1'. The <b> Java Compute node class </b> window loads.<br>&nbsp;&nbsp;&nbsp;<b>b) </b>Select the package as 'default' from the Browse button. Select the other values as default  and click 'Next'.<br>&nbsp;&nbsp;&nbsp<b>c) </b>From the <b>JavaCompute node class template</b> window, select <b>'Process via Operational Decision Manager ruleset'</b>.<br>&nbsp;&nbsp;&nbsp<b>d) </b>Specify the required parameters to connect to the ODM Server and click 'Next'.'.<br>&nbsp;&nbsp;&nbsp<b>e) </b>If the connection is successful, the window <b>'Select a ruleset for the Java ODM Template' </b> loads.<br>&nbsp;&nbsp;&nbsp<b>f) </b>Select the appropriate Rules application, Rule application version, Ruleset, Ruleset version.<br>&nbsp;&nbsp;&nbsp<b>g)</b>The appropriate ruleset parameters are then loaded.<br>&nbsp;&nbsp;&nbsp;<b>h) </b>Please make sure to select or check the option for <b>'Download the jar files associated with this ruleset jars and add them to the Java project'.</b>.<br>&nbsp;&nbsp;&nbsp<b>i) </b>Click 'Next' and select the default values in the <b> Java Settings window</b>.<br>&nbsp;&nbsp;&nbsp<b>j) </b>Click 'Next' and click on 'Finish' to complete the set up of the Java Compute node.<br>&nbsp;&nbsp;&nbsp<b>k) </b>The above steps will auto-generate the code for the above Java Compute node and it will also download the Java XOM API jar under the App_OPCUA_ODM_JCN --> Other Resources folder.<br>&nbsp;&nbsp;&nbsp<b>m) </b>For details on connecting to the ODM Server using Java Compute node, please refer to the Knowledge Center Link: https://www.ibm.com/docs/en/app-connect/12.0?topic=uodmobr-executing-odm-business-rules-by-using-javacompute-node" 
 									},
 									{
 										"details": "From the auto-generated code for 'Java Compute1' , <b>onSetup</b> function already contains the code to connect to the ODM Server using the specified policy and to retrieve the specified ODM Rule from the Server. You will need to update the <b>'evaluate'</b> function to read data and call the ruleset operation. Please refer to the sample example code as described in the next step." 
@@ -482,7 +491,7 @@
 										"details": "From the Application Development view , right-click the Policy project for ODM server policy created earlier, and select 'Deploy'."
 									}, 
 									{
-										"details": "From the Application Development view , right-click the Flow_OPCUA_ODM.msgflow and select 'Deploy'."
+										"details": "From the Application Development view , right-click the Flow_OPCUA_ODM_JCN.msgflow and select 'Deploy'."
 									}, 
 									{
 										"details": "In the Deploy window, select the integration server that you have started, and click Finish."
@@ -496,7 +505,7 @@
 						},
 
 					{
-							"section": "<b>Testing the Flow_OPCUA_ODM Flow using the Flow Exerciser</b>",
+							"section": "<b>Testing the Flow_OPCUA_ODM_JCN Flow using the Flow Exerciser</b>",
 							"steps": {
 								"type": "ordered",
 								"details": [
@@ -504,7 +513,7 @@
 										"details": "Ensure that your Integration Server is started."
 									},	
 									{
-										"details": "Navigate to the Flow Exerciser of the Flow_OPCUA_ODM.msgflow."
+										"details": "Navigate to the Flow Exerciser of the Flow_OPCUA_ODM_JCN.msgflow."
 									},										
 									{
 										"details": "In the editor, click the Start Flow Exerciser icon in red: <img src='https://ot4i.github.io/iib-tutorials/images/icons/iib/startFlowExerciser.png' alt='' /> to start recording the message path through the flow. "
